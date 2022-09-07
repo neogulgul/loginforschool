@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Arial";
+	font-size: 15px;
+}
+
+body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	height: 100vh;
+}
+
+#info {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#info svg:hover + p {
+	opacity: 1;
+}
+
+#info p {
+	padding: 10px;
+	border-radius: 5px;
+	transition: 0.3s;
+	opacity: 0;
+	pointer-events: none;
+	background-color: #000;
+	color: #fff;
+}
+
+#back {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+	border-radius: 1000000px;
+	text-decoration: none;
+	background-color: blueviolet;
+	color: #fff;
+}
+
+#back:hover {
+	opacity: 0.8;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 25px;
+	border: 2px solid #bdbdbd;
+	border-radius: 5px;
+}
+
+input {
+	padding: 5px;
+	border: inherit;
+	border-radius: inherit;
+	outline: none;
+}
+
+input:focus {
+	border-color: blueviolet;
+}
+
+input[type="submit"] {
+	border: none;
+	background-color: blueviolet;
+	color: #fff;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	opacity: 0.8;
+}
